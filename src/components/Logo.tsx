@@ -78,9 +78,9 @@ const Logo = () => {
       </div>
     </div>;
 
-  // Return Option 2 by default - you can change this to test different options
-  // Just change "Option2" to "Option1", "Option3", "Option4", or "Option5" to see different designs
-  return <Option2 />;
+  // Return Option 5 by default - you can change this to test different options
+  // Just change "Option5" to "Option1", "Option2", "Option3", or "Option4" to see different designs
+  return <Option5 />;
 };
 export default Logo;
 
