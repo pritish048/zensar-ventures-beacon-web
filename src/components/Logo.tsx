@@ -1,36 +1,21 @@
-
 import { Mountain } from "lucide-react";
-
 const Logo = () => {
   // Option 1: Original style with "Ventures"
-  const Option1 = () => (
-    <div className="flex items-center gap-2">
+  const Option1 = () => <div className="flex items-center gap-2 bg-red-100 rounded-xl">
       <div className="relative">
-        <Mountain 
-          size={28} 
-          className="text-blue-600" 
-          strokeWidth={2.5}
-        />
+        <Mountain size={28} className="text-blue-600" strokeWidth={2.5} />
       </div>
       <div className="flex flex-col">
-        <h1 className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-tight">
-          Zensar
-        </h1>
+        <h1 className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-tight">Zensar</h1>
         <span className="text-xs text-gray-500 font-medium -mt-1">
           VENTURES
         </span>
       </div>
-    </div>
-  );
+    </div>;
 
   // Option 2: Single line layout
-  const Option2 = () => (
-    <div className="flex items-center gap-2">
-      <Mountain 
-        size={24} 
-        className="text-blue-600" 
-        strokeWidth={2.5}
-      />
+  const Option2 = () => <div className="flex items-center gap-2">
+      <Mountain size={24} className="text-blue-600" strokeWidth={2.5} />
       <h1 className="text-lg sm:text-xl md:text-2xl font-bold">
         <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
           Zensar
@@ -39,18 +24,12 @@ const Logo = () => {
           Ventures
         </span>
       </h1>
-    </div>
-  );
+    </div>;
 
   // Option 3: Stacked with larger mountain
-  const Option3 = () => (
-    <div className="flex items-center gap-3">
+  const Option3 = () => <div className="flex items-center gap-3">
       <div className="relative bg-blue-50 p-2 rounded-lg">
-        <Mountain 
-          size={32} 
-          className="text-blue-600" 
-          strokeWidth={2}
-        />
+        <Mountain size={32} className="text-blue-600" strokeWidth={2} />
       </div>
       <div className="flex flex-col">
         <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-tight">
@@ -60,18 +39,12 @@ const Logo = () => {
           VENTURES
         </span>
       </div>
-    </div>
-  );
+    </div>;
 
   // Option 4: Compact modern design
-  const Option4 = () => (
-    <div className="flex items-center gap-2">
+  const Option4 = () => <div className="flex items-center gap-2">
       <div className="relative">
-        <Mountain 
-          size={26} 
-          className="text-blue-600" 
-          strokeWidth={2.5}
-        />
+        <Mountain size={26} className="text-blue-600" strokeWidth={2.5} />
       </div>
       <div>
         <h1 className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-none">
@@ -81,12 +54,10 @@ const Logo = () => {
           </span>
         </h1>
       </div>
-    </div>
-  );
+    </div>;
 
   // Return Option 1 by default - you can change this to test different options
   // Just change "Option1" to "Option2", "Option3", or "Option4" to see different designs
   return <Option1 />;
 };
-
 export default Logo;
