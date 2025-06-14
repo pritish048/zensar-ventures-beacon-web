@@ -1,4 +1,5 @@
 
+
 import { Mountain } from "lucide-react";
 const Logo = () => {
   // Option 1: Original style with "Ventures"
@@ -57,8 +58,29 @@ const Logo = () => {
       </div>
     </div>;
 
+  // Option 5: Large mountain range with prominent summit
+  const Option5 = () => <div className="flex items-center gap-3">
+      <div className="relative">
+        {/* Mountain range with one large summit */}
+        <div className="relative flex items-end">
+          <Mountain size={20} className="text-blue-400" strokeWidth={2} />
+          <Mountain size={36} className="text-blue-600 -ml-2" strokeWidth={2.5} />
+          <Mountain size={22} className="text-blue-500 -ml-2" strokeWidth={2} />
+        </div>
+      </div>
+      <div className="flex flex-col">
+        <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-tight">
+          Zensar
+        </h1>
+        <span className="text-xs text-blue-600 font-semibold tracking-wider">
+          VENTURES
+        </span>
+      </div>
+    </div>;
+
   // Return Option 2 by default - you can change this to test different options
-  // Just change "Option2" to "Option1", "Option3", or "Option4" to see different designs
+  // Just change "Option2" to "Option1", "Option3", "Option4", or "Option5" to see different designs
   return <Option2 />;
 };
 export default Logo;
+
