@@ -1,5 +1,11 @@
-
 const Hero = () => {
+  const scrollToPortfolio = () => {
+    const portfolioSection = document.getElementById('portfolio');
+    if (portfolioSection) {
+      portfolioSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative bg-gradient-to-br from-blue-50 to-white pt-16 sm:pt-20 pb-12 sm:pb-16 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-transparent"></div>
@@ -24,7 +30,10 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 px-4">
-            <button className="bg-blue-600 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 text-sm sm:text-base">
+            <button 
+              onClick={scrollToPortfolio}
+              className="bg-blue-600 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 text-sm sm:text-base"
+            >
               View Portfolio
             </button>
             <button className="border border-blue-600 text-blue-600 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200 text-sm sm:text-base">
