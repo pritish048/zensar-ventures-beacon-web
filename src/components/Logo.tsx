@@ -1,3 +1,4 @@
+
 import { Mountain } from "lucide-react";
 const Logo = () => {
   // Option 1: Original style with "Ventures"
@@ -56,8 +57,8 @@ const Logo = () => {
       </div>
     </div>;
 
-  // Return Option 1 by default - you can change this to test different options
-  // Just change "Option1" to "Option2", "Option3", or "Option4" to see different designs
-  return <Option1 />;
+  // Return Option 2 by default - you can change this to test different options
+  // Just change "Option2" to "Option1", "Option3", or "Option4" to see different designs
+  return <Option2 />;
 };
 export default Logo;
