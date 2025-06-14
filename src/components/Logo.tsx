@@ -1,11 +1,11 @@
 
+import { TreePine } from "lucide-react";
 
-import { Mountain } from "lucide-react";
 const Logo = () => {
   // Option 1: Original style with "Ventures"
   const Option1 = () => <div className="flex items-center gap-2 bg-red-100 rounded-xl">
       <div className="relative">
-        <Mountain size={28} className="text-blue-600" strokeWidth={2.5} />
+        <TreePine size={28} className="text-blue-600" strokeWidth={2.5} />
       </div>
       <div className="flex flex-col">
         <h1 className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-tight">Zensar</h1>
@@ -17,7 +17,7 @@ const Logo = () => {
 
   // Option 2: Single line layout
   const Option2 = () => <div className="flex items-center gap-2">
-      <Mountain size={24} className="text-blue-600" strokeWidth={2.5} />
+      <TreePine size={24} className="text-blue-600" strokeWidth={2.5} />
       <h1 className="text-lg sm:text-xl md:text-2xl font-bold">
         <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
           Zensar
@@ -28,10 +28,10 @@ const Logo = () => {
       </h1>
     </div>;
 
-  // Option 3: Stacked with larger mountain
+  // Option 3: Stacked with larger tree
   const Option3 = () => <div className="flex items-center gap-3">
       <div className="relative bg-blue-50 p-2 rounded-lg">
-        <Mountain size={32} className="text-blue-600" strokeWidth={2} />
+        <TreePine size={32} className="text-blue-600" strokeWidth={2} />
       </div>
       <div className="flex flex-col">
         <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-tight">
@@ -46,7 +46,7 @@ const Logo = () => {
   // Option 4: Compact modern design
   const Option4 = () => <div className="flex items-center gap-2">
       <div className="relative">
-        <Mountain size={26} className="text-blue-600" strokeWidth={2.5} />
+        <TreePine size={26} className="text-blue-600" strokeWidth={2.5} />
       </div>
       <div>
         <h1 className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-none">
@@ -58,14 +58,14 @@ const Logo = () => {
       </div>
     </div>;
 
-  // Option 5: Large mountain range with prominent summit
+  // Option 5: Large tree forest with one large sequoia
   const Option5 = () => <div className="flex items-center gap-3">
       <div className="relative">
-        {/* Mountain range with one large summit */}
+        {/* Tree forest with one large sequoia */}
         <div className="relative flex items-end">
-          <Mountain size={20} className="text-blue-400" strokeWidth={2} />
-          <Mountain size={36} className="text-blue-600 -ml-2" strokeWidth={2.5} />
-          <Mountain size={22} className="text-blue-500 -ml-2" strokeWidth={2} />
+          <TreePine size={20} className="text-blue-400" strokeWidth={2} />
+          <TreePine size={36} className="text-blue-600 -ml-2" strokeWidth={2.5} />
+          <TreePine size={22} className="text-blue-500 -ml-2" strokeWidth={2} />
         </div>
       </div>
       <div className="flex flex-col">
@@ -83,4 +83,3 @@ const Logo = () => {
   return <Option5 />;
 };
 export default Logo;
-
